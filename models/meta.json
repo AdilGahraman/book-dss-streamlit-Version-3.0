@@ -1,0 +1,51 @@
+{
+  "rating": {
+    "features": [
+      "Age",
+      "user_avg_rating",
+      "user_consistency",
+      "book_avg_rating",
+      "book_popularity",
+      "book_rating_std",
+      "age_book_gap",
+      "rating_difference"
+    ],
+    "train_mae": 1.2515439706541729e-05
+  },
+  "like": {
+    "features": [
+      "Age",
+      "user_avg_rating",
+      "user_consistency",
+      "book_avg_rating",
+      "book_popularity",
+      "age_book_gap",
+      "popularity_ratio"
+    ],
+    "train_acc": 0.8032336620918784
+  },
+  "clusters": {
+    "features": [
+      "user_avg_rating",
+      "user_activity",
+      "user_consistency",
+      "Age"
+    ],
+    "k": 3
+  },
+  "forecast": {
+    "enabled": true,
+    "points": 60,
+    "start": "2019-01-01 00:00:00",
+    "end": "2023-12-01 00:00:00"
+  },
+  "nlp": {
+    "enabled": true,
+    "classes": [
+      "Fiction",
+      "General",
+      "Non-Fiction"
+    ],
+    "test_accuracy": 0.9859227594339622
+  }
+}
